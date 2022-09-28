@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        New Note
+    </title>
+</head>
+
+<body>
+    <h3>NEW NOTE</h3>
+    <div class="modal-body">
+        <form [formGroup]="noteForm" (ngSubmit)="onAddNote()">
+            <div class="form-group">
+                <h4><label for="title"><b>Title</b></label></h4>
+                <input type="text" formControlName="title" class="form-control" id="title" placeholder="Title" required>
+            </div>
+            <div class="form-group">
+                <h4><label for="Content"><b>Content</b></label></h4>
+                <input type="text" formControlName="content" class="form-control" id="content" placeholder="Content" required>
+            </div>
+            <div>
+                <button [disabled]="noteForm.invalid" type="submit" class="btn btn-info">Save Note</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

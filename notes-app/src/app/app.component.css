@@ -1,0 +1,33 @@
+.example-viewport {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+}
+  
+.example-item {
+    height: 50px;
+}
+
+h5{
+    padding-left: 5%;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+body > h3{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+#submit-button {
+    padding-top: 5%;
+}
+
+a{
+    color: black!important;
+}
+
+a:hover {
+    color: grey!important;
+}
